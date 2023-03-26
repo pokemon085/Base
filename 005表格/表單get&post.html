@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<!-- 
+get獲取數據
+post提交數據
+get發送的數據都寫在網址上面,用戶可見
+post用戶不可見
+get不能提交大量數據,post可以 不能混用 
+-->
+<body>
+    <h1>get</h1>
+    <form action="https://www.google.com/" method="https://www.google.com/?name=a&password=b">
+    <table>
+        <tbody>
+            <tr><td><input type="text" name="name"></td></tr>
+            <tr><td><input type="text" name="password"></td></tr>
+            <tr><td><input type="submit" value="提交"></td></tr>
+        </tbody>
+    </table>        
+    </form>
+    <!-- get提交結果 https://www.google.com/?name=a&password=b -->
+
+
+    <h1>post</h1>
+    <form action="https://www.google.com/" method="post">
+    <table>
+        <tbody>
+            <tr><td><input type="text" name="name"></td></tr>
+            <tr><td><input type="text" name="password"></td></tr>
+            <tr><td><input type="submit" value="提交"></td></tr>
+        </tbody>
+    </table>        
+    </form>
+    <!-- post提交結果 出現google error頁面 -->
+</body>
+</html>

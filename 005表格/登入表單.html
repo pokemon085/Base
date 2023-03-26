@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<!-- 
+form必須要有action屬性 表示提交地址
+所有需要提交的數據 input必須要有name屬性
+input按鈕的文字 使用value屬性表示
+input必須放在form內才能提交
+
+input type
+text輸入框/password密碼/radio單選/checkbox複選/button按鈕/submit提交
+reset重置/file文件選擇
+-->
+
+<body>
+    <h1>登入表單</h1>
+    <form action="https://www.google.com/">
+        <table border="1px" cellspacing="0" width="600px">
+            <tbody>
+                <tr height="40px" align="center">
+                    <td rowspan="4" style="color:#f00">登入</td>
+                    <td colspan="2"></td>
+                </tr>
+                <tr height="40px">
+                    <td align="right">用戶名:</td>
+                    <!-- 加上name="loginname"是為了提交後通過action把input輸入值帶到action後面的頁面 輸入的值會出現在連結的上面 -->
+                    <td><input type="text" name="loginname"></td> 
+                </tr>
+                <tr height="40px">
+                    <td align="right">密碼:</td>
+                    <td><input type="password" name="pwd"></td>
+                </tr>
+                <tr height="40px">
+                    <td colspan="2" align="center">
+                        <input type="submit" value="提交" style="width:80px; height:30px; background-color: rgb(120, 196, 169);"> <!-- type=submit 按下會執行action -->
+                        <input type="reset" value="重置" style="width:80px; height:30px; background-color: rgb(120, 196, 169);">  <!-- type=reset 按下會清空input內容 -->
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+
+</html>
